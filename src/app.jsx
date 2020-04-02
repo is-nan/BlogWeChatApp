@@ -1,6 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/redux'
-
+import './assets/css/animation.css'
+import './assets/css/main.css'
+import './assets/css/icon.css'
 import Index from './pages/index'
 
 import configStore from './store'
@@ -19,6 +21,7 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/Home/index',
       'pages/index/index'
     ],
     window: {

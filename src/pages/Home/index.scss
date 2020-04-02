@@ -1,0 +1,24 @@
+.Home{
+  width: 90%;
+  margin: 0 auto;
+  .Item{
+    .Title{
+      display: block;
+      margin-top: 10px;
+    }
+    .Excerpt{
+      font-size: 30px;
+      display: block;
+      margin: 10px 0px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+    .cover{
+      width: 100%;
+      height: 20vh;
+      border-radius: 6px;
+    }
+  }
+}
