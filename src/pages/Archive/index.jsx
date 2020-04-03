@@ -1,12 +1,10 @@
 import Taro, { useState,useEffect } from '@tarojs/taro'
 import { View, Button, Text,Image } from '@tarojs/components'
 
-function My(props) {
+function Archive(props) {
   return (
-    <View>
-      关于我
-    </View>
+    <View></View>
   )
 }
 
-export default My
+export default Archive

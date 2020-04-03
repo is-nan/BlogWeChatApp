@@ -15,10 +15,14 @@ function Home (props) {
       {
         data.map((Item,index)=>{
           return (
-            <View className="Item" key={Item.id}>
-              <Text className="text-black text-bold">{Item.title}</Text>
-              <Text className="text-gray Excerpt">{Item.content.replace(/[#]/g, "")}</Text>
-              <Image src={Item.Cover} className="cover"/>
+            <View className="Item" key={Item.id} onClick={()=>{
+              Taro.redirectTo({
+                url: `/pages/ArticleDetails/index?did=${Item.id}`
+              })
+            }}>
+              <Text className="text-xxl text-bold text-shadow">{Item.title}</Text>
+              <Text className="text-black text-df Excerpt">{Item.content.replace(/[#\r\n]/g, "").substring(0,100)}...</Text>
+              <View style={{backgroundImage:`url(${Item.Cover})`}} className="cover shadow-blur"/>
             </View>
             )
         })
@@ -26,5 +30,9 @@ function Home (props) {
     </View>
   )
 }
-
+Home.config={
+  navigationBarTitleText: '首页',
+  navigationBarBackgroundColor: "#ffffff",
+  navigationBarTextStyle: "black"
+}
 export default Home

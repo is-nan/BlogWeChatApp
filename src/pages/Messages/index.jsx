@@ -1,12 +1,12 @@
 import Taro, { useState,useEffect } from '@tarojs/taro'
 import { View, Button, Text,Image } from '@tarojs/components'
 
-function My(props) {
+function Messages(props) {
   return (
     <View>
-      关于我
+      留言
     </View>
   )
 }
 
-export default My
+export default Messages

@@ -22,13 +22,44 @@ class App extends Component {
   config = {
     pages: [
       'pages/Home/index',
-      'pages/index/index'
+      'pages/ArticleDetails/index',
+      'pages/Archive/index',
+      'pages/My/index',
+      'pages/Messages/index'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
+      navigationBarTitleText: '南岸有归的博客',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: "#bfbfbf",
+      selectedColor: "#1296db",
+      borderStyle:"white",
+      list: [{
+        "selectedIconPath": "assets/images/Home-Active.png",
+        "iconPath": "assets/images/Home-.png",
+        "pagePath": "pages/Home/index",
+        "text": "首页"
+      }, {
+        "selectedIconPath": "assets/images/Archive-Active.png",
+        "iconPath": "assets/images/Archive-.png",
+        "pagePath": "pages/Archive/index",
+        "text": "归档"
+      }, {
+        "selectedIconPath": "assets/images/My-Active.png",
+        "iconPath": "assets/images/My-.png",
+        "pagePath": "pages/My/index",
+        "text": "关于"
+      },
+        {
+          "selectedIconPath": "assets/images/Messages-Active.png",
+          "iconPath": "assets/images/Messages-.png",
+          "pagePath": "pages/Messages/index",
+          "text": "留言"
+        }
+      ]
     }
   }
 
