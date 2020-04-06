@@ -1,4 +1,12 @@
-/*ÕýÎÄÑùÊ½*/
+.Icon{
+  color: #999999;
+  font-size: 26px;
+  display: flex;
+  margin: 10px 0px 30px 0px;
+  width: 100%;
+  padding: 0px 30px;
+}
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .h2w {
   font-family: "STHeitiTC-Light", "Microsoft YaHei Light", "Hiragino Sans GB", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 32px;
@@ -13,7 +21,7 @@
 
 }
 
-/**±êÌâ**/
+/**ï¿½ï¿½ï¿½ï¿½**/
 .h2w__h1,
 .h2w__h2,
 .h2w__h3,
@@ -23,7 +31,7 @@
   font-weight: bold;
 }
 
-/**ÉèÖÃÐÐ¼äÔªËØÑùÊ½**/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½Ôªï¿½ï¿½ï¿½ï¿½Ê½**/
 .h2w__span,
 .h2w__b,
 .h2w__strong,
@@ -77,7 +85,7 @@
 }
 
 
-/**±í¸ñ**/
+/**ï¿½ï¿½ï¿½**/
 .h2w__tableParent {
   width: 100%;
   overflow-x: auto;
@@ -133,7 +141,7 @@
   font-weight: bold;
 }
 
-/**´úÂë¿é**/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½**/
 .h2w__pre {
   /*white-space:nowrap;*/
   padding: 20px;
@@ -189,7 +197,7 @@
   display: block;
   font-size: 80%;
 }
-/**ÁÐ±í**/
+/**ï¿½Ð±ï¿½**/
 .h2w__ul,
 .h2w__ol {
   margin-bottom: 40px;
@@ -218,18 +226,18 @@
   padding-left: 1.6rem;
 }
 
-/**Ò»¼¶olÑùÊ½**/
+/**Ò»ï¿½ï¿½olï¿½ï¿½Ê½**/
 .h2w__ol {
   list-style-type: decimal;
 }
 
-/**¶þ¼¶olÑùÊ½**/
+/**ï¿½ï¿½ï¿½ï¿½olï¿½ï¿½Ê½**/
 .h2w__ul .h2w__ol,
 .h2w__ol .h2w__ol {
   list-style-type: lower-roman;
 }
 
-/**Èý¼¶olÑùÊ½**/
+/**ï¿½ï¿½ï¿½ï¿½olï¿½ï¿½Ê½**/
 .h2w__ul .h2w__ul .h2w__ol,
 .h2w__ul .h2w__ol .h2w__ol,
 .h2w__ol .h2w__ul .h2w__ol,
@@ -237,18 +245,18 @@
   list-style-type: lower-alpha;
 }
 
-/**Ò»¼¶ulÑùÊ½**/
+/**Ò»ï¿½ï¿½ulï¿½ï¿½Ê½**/
 .h2w__ul {
   list-style-type: disc;
 }
 
-/**¶þ¼¶ulÑùÊ½**/
+/**ï¿½ï¿½ï¿½ï¿½ulï¿½ï¿½Ê½**/
 .h2w__ul .h2w__ul,
 .h2w__ol .h2w__ul {
   list-style-type: circle;
 }
 
-/**Èý¼¶ÑùÊ½**/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½**/
 .h2w__ol .h2w__ol .h2w__ul,
 .h2w__ol .h2w__ul .h2w__ul,
 .h2w__ul .h2w__ol .h2w__ul,
@@ -256,7 +264,7 @@
   list-style-type: square;
 }
 
-/**¿éÔªËØ**/
+/**ï¿½ï¿½Ôªï¿½ï¿½**/
 .h2w__p {
   margin: 20px 0 20px 0;
   /*word-wrap:break-word;
@@ -274,7 +282,7 @@
   padding: 0 20px;
 }
 
-/**ÄÚÁ¬ÔªËØ**/
+/**ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½**/
 .h2w__a,
 .h2w__span,
 .h2w__b,
@@ -294,20 +302,20 @@
   font-style: italic;
 }
 
-/**ÎÄ±¾É¾³ýÏß**/
+/**ï¿½Ä±ï¿½É¾ï¿½ï¿½ï¿½ï¿½**/
 .h2w__s,
 .h2w__strike,
 .h2w__del {
   text-decoration: line-through;
 }
 
-/**ÎÄ±¾ÏÂ»®Ïß**/
+/**ï¿½Ä±ï¿½ï¿½Â»ï¿½ï¿½ï¿½**/
 .h2w__ins,
 .h2w__u {
   text-decoration: underline;
 }
 
-/**Á´½Ó**/
+/**ï¿½ï¿½ï¿½ï¿½**/
 .h2w__a {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -321,12 +329,12 @@
   margin: 40px 0;
 }
 
-/**Ó«¹â±ê¼Ç**/
+/**Ó«ï¿½ï¿½ï¿½ï¿½**/
 .h2w__mark {
   border-radius: 4px;
 }
 
-/**ÉÏ±ê¡¢ÏÂ±ê**/
+/**ï¿½Ï±ê¡¢ï¿½Â±ï¿½**/
 .h2w__sup,
 .h2w__sub {
   font-size: 75%;
@@ -341,13 +349,13 @@
   bottom: -0.25em;
 }
 
-/**emoji±íÇé**/
+/**emojiï¿½ï¿½ï¿½ï¿½**/
 .h2w__g-emoji {
   margin: 0 0.1em;
   font-family: "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-/**ÄÚÖÃÔªËØ**/
+/**ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½**/
 image, video {
   max-width: 100%;
 }
@@ -390,7 +398,7 @@ video {
   padding-bottom: 40px;
 }
 
-/**´úÂëÐÐºÅ**/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½**/
 .h2w__lineNum {
   text-align: right;
   float: left;
@@ -405,20 +413,20 @@ video {
 .h2w__img {
   max-width: 100%
 }
-/*ÕýÎÄÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .h2w-dark {
   color:#ddd;
   background-color:#000;
 }
 
-/**±êÌâ**/
+/**ï¿½ï¿½ï¿½ï¿½**/
 .h2w-dark .h2w__h1,
 .h2w-dark .h2w__h2 {
     border-color:#3d3d3d;
 }
 
 
-/**±í¸ñ**/
+/**ï¿½ï¿½ï¿½**/
 .h2w-dark .h2w__thead .h2w__tr {
     background-color:#1f1f1f;
 }
@@ -431,7 +439,7 @@ video {
 }
 
 
-/**´úÂë¿é**/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½**/
 .h2w-dark .h2w__pre,
 .h2w-dark .h2w__pre .h2w__code {
     background-color:#1b1b1b;
@@ -444,12 +452,12 @@ video {
 }
 
 
-/**¿éÔªËØ**/
+/**ï¿½ï¿½Ôªï¿½ï¿½**/
 .h2w-dark .h2w__blockquote {
     border-left-color:#10230f;
 }
 
-/**ÄÚÁ¬ÔªËØ**/
+/**ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½**/
 .h2w-dark .h2w__a {
     color:#1aad16; border-color:#4d804b;
 }
@@ -546,20 +554,20 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
   font-weight: bold;
 }
 
-/*ÕýÎÄÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .h2w-light {
   color:#333;
   background-color:white;
 }
 
-/**±êÌâ**/
+/**ï¿½ï¿½ï¿½ï¿½**/
 .h2w-light .h2w__h1,
 .h2w-light .h2w__h2 {
     border-color:#eee;
 }
 
 
-/**±í¸ñ**/
+/**ï¿½ï¿½ï¿½**/
 .h2w-light .h2w__thead .h2w__tr {
     background-color:#f6f8fa;
 }
@@ -572,7 +580,7 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 }
 
 
-/**´úÂë¿é**/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½**/
 .h2w-light .h2w__pre {
     background-color:#f6f8fa;
     border-color:#eaedf0;
@@ -584,12 +592,12 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 }
 
 
-/**¿éÔªËØ**/
+/**ï¿½ï¿½Ôªï¿½ï¿½**/
 .h2w-light .h2w__blockquote {
     border-left-color:#dfe2e5;
 }
 
-/**ÄÚÁ¬ÔªËØ**/
+/**ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½**/
 .h2w-light .h2w__a {
     color:#1aad16; border-color:#b9d9b8;
 }
@@ -704,5 +712,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .h2w-light .hljs-strong {
   font-weight: bold;
+}
+.ArticleDetails{
+  margin: 30px auto;
+  .Title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 

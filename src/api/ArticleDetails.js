@@ -4,6 +4,7 @@ import Taro from '../http/index'
 export function GetArticleDetails (id) {
   return Taro.request({
     url: '/GetArticleDetails',
-    method:'POST'
+    method:'POST',
+    data:{id}
   })
 }

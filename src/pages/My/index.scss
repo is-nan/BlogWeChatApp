@@ -1,0 +1,40 @@
+.My{
+  width: 90%;
+  margin: 0 auto;
+  .Avatar{
+    margin: 30px auto;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .Name{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+  }
+  .signature{
+    display: block;
+    text-align: center;
+    color: #565654;
+  }
+  .text{
+    display: block;
+    margin: 10px;
+    text-align: center;
+  }
+  .Item{
+    text-align: center;
+    margin: 10px 0px;
+  .List{
+    padding: 1px 10px;
+    white-space: pre-wrap;
+    border: 1px solid #e3edf3;
+    background: #f7f7f9;
+    color: #d14;
+    border-radius: 2px;
+    margin: 10px 10px;
+  }
+  }
+}

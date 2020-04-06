@@ -21,11 +21,12 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/Messages/index',
       'pages/Home/index',
-      'pages/ArticleDetails/index',
       'pages/Archive/index',
       'pages/My/index',
-      'pages/Messages/index'
+      'pages/ArticleDetails/index'
+
     ],
     window: {
       backgroundTextStyle: 'light',
