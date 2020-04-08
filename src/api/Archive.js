@@ -1,17 +1,9 @@
 import Taro from '../http/index'
 
-//获取分类列表
-export function GetCategoryList () {
+//获取已发布的文章
+export function GetReleaseArticle () {
   return Taro.request({
-    url: '/GetCategoryList',
-    method:'GET'
-  })
-}
-
-//获取标签列表
-export function GetTagList () {
-  return Taro.request({
-    url: '/GetTagList',
+    url: '/GetReleaseArticle',
     method:'GET'
   })
 }

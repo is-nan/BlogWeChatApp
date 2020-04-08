@@ -25,5 +25,7 @@ function Messages(props) {
     </View>
   )
 }
-
+Messages.config={
+  navigationBarTitleText: '留言板'
+}
 export default Messages

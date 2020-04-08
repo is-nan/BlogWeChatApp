@@ -1,18 +1,30 @@
 import Taro, { useState,useEffect } from '@tarojs/taro'
 import { View, Button, Text, Image, Icon } from '@tarojs/components'
-import { GetArticleDetails } from "../../api/ArticleDetails";
+import { GetArticleDetails,GetArticleComment } from "../../api/ArticleDetails";
 import './index.scss'
 import moment from "moment";
 import "moment/locale/zh-cn";
 import TaroParser from 'taro-parse'
+import MessagesComponents from "../../components/MessagesComponents";
 function ArticleDetails (props) {
+  //文章详情数据
   const [data,setData]=useState({})
+  //文章评论数据
+  const [MessList,setMessList]=useState([])
+  const GetMess=()=>{
+    GetArticleComment(this.$router.params.id)
+      .then((res)=>{
+        setMessList(res.data.data)
+      })
+  }
   useEffect(()=>{
-    GetArticleDetails(1)
+    GetArticleDetails(this.$router.params.id)
     // this.$router.params.id
       .then((res)=>{
         setData(res.data.data.Article[0])
+        Taro.setNavigationBarTitle({title:res.data.data.Article[0].title})
       })
+    GetMess()
   },[])
   const imgClick = (src) => {
     Taro.previewImage({urls: [src]}).then(() => {
@@ -67,6 +79,8 @@ function ArticleDetails (props) {
           })}
         </View>
       </View>
+      <Text className="text-black text-bold text-xxl MessListName">文章评论</Text>
+      <MessagesComponents data={MessList} ArticleId={data.id} GetData={GetMess}/>
     </View>
   )
 }

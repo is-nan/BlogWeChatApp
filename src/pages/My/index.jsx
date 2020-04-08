@@ -32,5 +32,7 @@ function My(props) {
     </View>
   )
 }
-
+My.config={
+  navigationBarTitleText: '关于我'
+}
 export default My

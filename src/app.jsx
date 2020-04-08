@@ -4,9 +4,8 @@ import './assets/css/animation.css'
 import './assets/css/main.css'
 import './assets/css/icon.css'
 import Index from './pages/index'
-
 import configStore from './store'
-
+import 'taro-ui/dist/style/index.scss'
 import './app.scss'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -21,12 +20,11 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/Messages/index',
       'pages/Home/index',
       'pages/Archive/index',
+      'pages/Messages/index',
       'pages/My/index',
       'pages/ArticleDetails/index'
-
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -38,6 +36,7 @@ class App extends Component {
       color: "#bfbfbf",
       selectedColor: "#1296db",
       borderStyle:"white",
+      backgroundColor:'#ffffff',
       list: [{
         "selectedIconPath": "assets/images/Home-Active.png",
         "iconPath": "assets/images/Home-.png",

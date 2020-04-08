@@ -1,6 +1,7 @@
 .MessagesComponents{
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 15px;
   .Comment{
     width: 100%;
     border: 1px solid #ddd;
@@ -48,6 +49,7 @@
     transition: box-shadow ease-out .5s;
     transition-delay: .2s;
     margin: 10px 0px;
+    overflow: hidden;
     .User{
       display: flex;
       margin-top: 15px;
@@ -68,7 +70,14 @@
       }
     }
     .Content{
-      margin: 15px 6% 30px 6%;
+      margin: 15px 6% 5px 6%;
+      overflow: hidden;
+    }
+    .Icon{
+      margin:15px 0px 25px 88%;
+      color: #333333;
+      display: flex;
+      justify-content:right;
     }
   }
 }
