@@ -3,7 +3,7 @@ import Taro from '@tarojs/taro'
 const interceptor = function (chain) {
   const requestParams = chain.requestParams
   //定义请求地址
-  requestParams.url=`https://www.nanbk.com/api${chain.requestParams.url}`
+  requestParams.url=`https://react.nanbk.com/api${chain.requestParams.url}`
   //定义请求头
   requestParams.header={
     'content-type': 'application/json',
